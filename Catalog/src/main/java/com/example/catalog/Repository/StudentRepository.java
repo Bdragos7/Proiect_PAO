@@ -33,8 +33,8 @@ public class StudentRepository {
                 entity.setId(res.getInt("ID"));
                 entity.setFirstName(res.getString("FIRST_NAME"));
                 entity.setLastName(res.getString("LAST_NAME"));
-                entity.setYear(res.getString("YEAR"));
-                entity.setProfile(res.getString("PROFILE"));
+                entity.setYear2(res.getString("YEAR"));
+                entity.setProfile2(res.getString("PROFILE"));
 
 
                 list.add(entity);
@@ -53,8 +53,8 @@ public class StudentRepository {
             java.sql.PreparedStatement statement = con.prepareStatement(sql);
             statement.setString(1, entity.getFirstName());
             statement.setString(2, entity.getLastName());
-            statement.setString(3, entity.getYear());
-            statement.setString(4, entity.getProfile());
+            statement.setString(3, entity.getYear2());
+            statement.setString(4, entity.getProfile2());
 
             statement.executeUpdate();
 
@@ -71,8 +71,8 @@ public class StudentRepository {
             java.sql.PreparedStatement statement = con.prepareStatement(sql);
             statement.setString(1, entity.getFirstName());
             statement.setString(2, entity.getLastName());
-            statement.setString(3, entity.getYear());
-            statement.setString(4, entity.getProfile());
+            statement.setString(3, entity.getYear2());
+            statement.setString(4, entity.getProfile2());
             statement.executeUpdate();
 
         } catch (SQLException e) {

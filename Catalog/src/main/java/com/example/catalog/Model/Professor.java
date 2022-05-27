@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-@AllArgsConstructor
+
 
 public class Professor {
 
@@ -19,7 +19,6 @@ public class Professor {
     public static String getFirstName() { return firstName; }
 
     public static String getLastName() { return lastName; }
-
 
     public static int getPhone_number() { return phone_number; }
 
